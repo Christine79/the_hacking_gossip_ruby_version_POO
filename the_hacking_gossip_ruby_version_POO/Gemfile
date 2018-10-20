@@ -1,0 +1,22 @@
+source "https://rubygems.org"
+ruby '2.5.1'
+
+
+#require 'bundler'
+#Bundler.require
+
+
+require 'google/apis/gmail_v1'
+require 'googleauth'
+require 'googleauth/stores/file_token_store'
+require 'fileutils'
+require 'gmail'
+
+
+gem 'gmail'
+gem 'csv'
+gem 'twitter'
+gem 'pry'
+gem "dotenv"
+gem 'nokogiri'
+gem 'bundler'
