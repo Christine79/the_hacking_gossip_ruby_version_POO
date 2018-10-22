@@ -1,7 +1,7 @@
 class Gossip
   attr_reader :author, :content
 
-  def initialize(author, content)
+  def initialize 
     @author = author
     @content = content
   end
@@ -15,9 +15,9 @@ class Gossip
 
 
 
-  def save
+  def save(author, content)
 #    $:.unshift File.expand_path("./../db", __FILE__)
-    my_gossip = Gossip.new(author, content) #=> Créé une instance de potin, sauvergardée juste dans cette variable
+    my_gossip = Gossip.new #=> Créé une instance de potin, sauvergardée juste dans cette variable
 #    my_gossip.save #=> Sauvegarde l'instance de potin dans le CSV correspondant, en créant une nouvelle ligne dans mon fichier CSV
 
 
@@ -39,4 +39,5 @@ class Gossip
 
 
   end
+
 end
