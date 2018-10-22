@@ -2,13 +2,10 @@ require 'gossip'
 require 'view'
 
 class Controller
-  def initialize
 
-  end
-end
-
-class Gossip
   def create_gossip
-    @gossip =  Gossip.new
+    gossip = Gossip.new("Valère Commère", "Poto est de Bordeaux")
+    puts "Gossip   #{gossip.author} #{gossip.content}"
+    gossip.save
   end
 end

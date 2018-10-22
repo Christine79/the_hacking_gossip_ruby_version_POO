@@ -8,7 +8,7 @@ class Router
   def perform
     puts "BIENVENUE DANS THE GOSSIP PROJECT"
     while true
-      puts "Tu veux faire quoi BG ?"
+      puts "Que veux-tu faire Christine ?"
       puts "1. Je veux créer un gossip"
       puts "4. Je veux quitter l'app"
       params = gets.chomp.to_i
